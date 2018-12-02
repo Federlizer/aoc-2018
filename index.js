@@ -1,7 +1,7 @@
 const fs = require("fs");
-const solution = require("./dayone_solution");
+const solution = require("./dayone/solution");
 
-fs.readFile("dayone_input.txt", "utf8", (err, data) => {
+fs.readFile("./dayone/input.txt", "utf8", (err, data) => {
     if (err) throw err;
 
     console.log(solution.chronicallyCalibratePT(data));
